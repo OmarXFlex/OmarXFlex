@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111b18">
+  <title>OmarXFlex · 移动机器人项目作品集</title>
+  <link rel="stylesheet" href="assets/profile.css">
+  <script src="assets/profile.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#projects">跳至项目索引</a>
+  <div class="masthead" id="top">
+    <header class="site-header shell">
+      <a href="#top" class="identity" aria-label="OmarXFlex 首页">
+        <span class="brandmark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>OmarXFlex</span>
+      </a>
+      <nav class="top-links" aria-label="主导航">
+        <a href="#projects">项目索引</a>
+        <a href="https://github.com/OmarXFlex" class="outbound" lang="en">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <div class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow" lang="en"><i aria-hidden="true"></i> Robotics portfolio</p>
+        <h1>移动机器人<span>项目作品集</span></h1>
+        <p class="lead">从走廊里的自主探索，到真实货架间的商品拣取。<br class="desktop-break">我的 8 个项目，记录机器人如何感知、导航与操作。</p>
+        <div class="hero-actions">
+          <a class="primary" href="assets/showreel.mp4" data-video data-title="移动机器人项目总览"><i class="triangle" aria-hidden="true"></i>播放总览<span class="runtime">00:40</span></a>
+          <a class="browse" href="#projects">浏览项目 <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <figure class="exhibit">
+        <div class="grid-plane" aria-hidden="true"></div>
+        <div class="orbit orbit-outer" aria-hidden="true"></div>
+        <div class="orbit orbit-inner" aria-hidden="true"></div>
+        <div class="machine-shadow" aria-hidden="true"></div>
+        <img class="machine" src="assets/hero-robot.webp" fetchpriority="high" alt="实拍的复合机器人，黑色机械臂安装在白色移动底盘上">
+        <figcaption><span class="photo-mark" aria-hidden="true"></span>复合机器人<span class="divider">/</span>实机拍摄</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <main id="projects" class="catalogue shell">
+    <header class="catalogue-head">
+      <h2>项目索引<span class="total" aria-label="共八个项目">08</span></h2>
+      <div class="filters" role="group" aria-label="按项目方向筛选" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">全部</button>
+        <button type="button" data-filter="manipulation" aria-pressed="false">移动操作</button>
+        <button type="button" data-filter="navigation" aria-pressed="false">自主探索</button>
+        <button type="button" data-filter="perception" aria-pressed="false">感知与跟随</button>
+        <button type="button" data-filter="coordination" aria-pressed="false">调度与协同</button>
+      </div>
+    </header>
+    <p id="filter-status" class="sr" role="status" aria-live="polite"></p>
+    <div class="gallery">
+        <article class="project" data-group="manipulation">
+          <div class="project-heading">
+            <h3><a href="assets/demos/mobile-manipulator.mp4" data-video data-title="复合机器人导航抓取">复合机器人导航抓取</a></h3>
+            <span class="category">移动操作</span>
+          </div>
+          <a class="frame" href="assets/demos/mobile-manipulator.mp4" data-video data-title="复合机器人导航抓取" aria-label="播放复合机器人导航抓取">
+            <img src="assets/covers/mobile-manipulator.jpg" width="768" height="432" loading="lazy" alt="移动机械臂在工作台前抓取红色方块">
+            <span class="kind">实机</span>
+            <span class="clip-time"><i class="triangle" aria-hidden="true"></i>0:15</span>
+          </a>
+          <p>底盘导航至工作台并停稳，机械臂对准红色方块，将它夹起并抬离台面。</p>
+          <span class="stack">SLAM Toolbox　/　Nav2</span>
+        </article>
+        <article class="project" data-group="navigation">
+          <div class="project-heading">
+            <h3><a href="assets/demos/language-nav.mp4" data-video data-title="有记忆的语言指令导航">有记忆的语言指令导航</a></h3>
+            <span class="category">自主探索</span>
+          </div>
+          <a class="frame" href="assets/demos/language-nav.mp4" data-video data-title="有记忆的语言指令导航" aria-label="播放有记忆的语言指令导航">
+            <img src="assets/covers/language-nav.jpg" width="768" height="432" loading="lazy" alt="室外机器人视野与地图中记录的探索路径">
+            <span class="kind">仿真与实机</span>
+            <span class="clip-time"><i class="triangle" aria-hidden="true"></i>0:31</span>
+          </a>
+          <p>机器人按语言指令寻找 NASA 标志，遇阻后沿地图退回岔路。室外实机同步记录了车辆位置与地图更新。</p>
+          <span class="stack">地图记忆　/　前沿探索</span>
+        </article>
+        <article class="project" data-group="manipulation">
+          <div class="project-heading">
+            <h3><a href="assets/demos/warehouse.mp4" data-video data-title="上海浦东免税仓拣取">上海浦东免税仓拣取</a></h3>
+            <span class="category">移动操作</span>
+          </div>
+          <a class="frame" href="assets/demos/warehouse.mp4" data-video data-title="上海浦东免税仓拣取" aria-label="播放上海浦东免税仓拣取">
+            <img src="assets/covers/warehouse.jpg" width="768" height="432" loading="lazy" alt="货架旁的移动机械臂夹取盒装商品">
+            <span class="kind">实仓</span>
+            <span class="clip-time"><i class="triangle" aria-hidden="true"></i>0:24</span>
+          </a>
+          <p>机器人沿货架通道抵达拣货位，从纸箱中夹起盒装商品，再转向对侧的蓝色料箱。</p>
+          <span class="stack">货架导航　/　商品抓取</span>
+        </article>
+        <article class="project" data-group="perception">
+          <div class="project-heading">
+            <h3><a href="assets/demos/driving-perception.mp4" data-video data-title="CARLA 模仿学习驾驶">CARLA 模仿学习驾驶</a></h3>
+            <span class="category">驾驶感知与跟随</span>
+          </div>
+          <a class="frame" href="assets/demos/driving-perception.mp4" data-video data-title="CARLA 模仿学习驾驶" aria-label="播放CARLA 模仿学习驾驶">
+            <img src="assets/covers/driving-perception.jpg" width="768" height="432" loading="lazy" alt="CARLA 仿真车辆驶近前车与红灯路口">
+            <span class="kind">仿真</span>
+            <span class="clip-time"><i class="triangle" aria-hidden="true"></i>0:13</span>
+          </a>
+          <p>在 CARLA 中结合车道线、信号灯与前车信息行驶。车辆接近路口时跟随前车减速，直至停稳。</p>
+          <span class="stack">车道线　/　信号灯　/　前车</span>
+        </article>
+        <article class="project" data-group="navigation">
+          <div class="project-heading">
+            <h3><a href="assets/demos/reactive-nav.mp4" data-video data-title="无记忆的视觉导航">无记忆的视觉导航</a></h3>
+            <span class="category">自主探索</span>
+          </div>
+          <a class="frame" href="assets/demos/reactive-nav.mp4" data-video data-title="无记忆的视觉导航" aria-label="播放无记忆的视觉导航">
+            <img src="assets/covers/reactive-nav.jpg" width="768" height="432" loading="lazy" alt="走廊画面上显示向左展开的多条候选轨迹">
+            <span class="kind">实机视角</span>
+            <span class="clip-time"><i class="triangle" aria-hidden="true"></i>0:14</span>
+          </a>
+          <p>根据当前相机画面生成候选轨迹。进入走廊转角时，原本向前集中的轨迹随视野变化向左展开。</p>
+          <span class="stack">Transformer　/　扩散模型</span>
+        </article>
+        <article class="project" data-group="perception">
+          <div class="project-heading">
+            <h3><a href="assets/demos/yolo-follow.mp4" data-video data-title="YOLO11 行人跟随与避障">YOLO11 行人跟随与避障</a></h3>
+            <span class="category">驾驶感知与跟随</span>
+          </div>
+          <a class="frame" href="assets/demos/yolo-follow.mp4" data-video data-title="YOLO11 行人跟随与避障" aria-label="播放YOLO11 行人跟随与避障">
+            <img src="assets/covers/yolo-follow.jpg" width="768" height="432" loading="lazy" alt="移动底盘跟随行人往门边转向">
+            <span class="kind">实机</span>
+            <span class="clip-time"><i class="triangle" aria-hidden="true"></i>0:10</span>
+          </a>
+          <p>移动底盘跟随室内行人。行人改变方向、走向门边时，底盘根据检测到的位置随之转向。</p>
+          <span class="stack">行人检测　/　底盘控制</span>
+        </article>
+        <article class="project" data-group="coordination">
+          <div class="project-heading">
+            <h3><a href="assets/demos/openclaw.mp4" data-video data-title="OpenClaw 取物任务调度">OpenClaw 取物任务调度</a></h3>
+            <span class="category">调度与协同</span>
+          </div>
+          <a class="frame" href="assets/demos/openclaw.mp4" data-video data-title="OpenClaw 取物任务调度" aria-label="播放OpenClaw 取物任务调度">
+            <img src="assets/covers/openclaw.jpg" width="768" height="432" loading="lazy" alt="机器人在茶几旁伸出机械臂取瓶">
+            <span class="kind">实机</span>
+            <span class="clip-time"><i class="triangle" aria-hidden="true"></i>0:21</span>
+          </a>
+          <p>一次取物请求串起导航、识别、抓取与返回。机器人从茶几上夹起绿色瓶子，带回标记区。</p>
+          <span class="stack">任务调度　/　导航抓取</span>
+        </article>
+        <article class="project" data-group="coordination">
+          <div class="project-heading">
+            <h3><a href="assets/demos/gnss-coordination.mp4" data-video data-title="GNSS 空地平台协同">GNSS 空地平台协同</a></h3>
+            <span class="category">调度与协同</span>
+          </div>
+          <a class="frame" href="assets/demos/gnss-coordination.mp4" data-video data-title="GNSS 空地平台协同" aria-label="播放GNSS 空地平台协同">
+            <img src="assets/covers/gnss-coordination.jpg" width="768" height="432" loading="lazy" alt="无人机和履带机器人在草地上同场运行">
+            <span class="kind">户外实机</span>
+            <span class="clip-time"><i class="triangle" aria-hidden="true"></i>0:05</span>
+          </a>
+          <p>无人机飞过草地时，履带机器人在地面行驶。地面站汇集空地平台的画面与状态。</p>
+          <span class="stack">无人机　/　履带机器人</span>
+        </article>
+    </div>
+  </main>
+  <footer class="site-footer shell">
+    <a class="identity" href="#top"><span class="brandmark" aria-hidden="true"><i></i><i></i><i></i></span>OmarXFlex</a>
+    <a href="#top">回到顶部 <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <dialog aria-labelledby="player-title">
+    <div class="player-header">
+      <h2 id="player-title">项目演示</h2>
+      <button class="close" type="button" aria-label="关闭视频" autofocus>×</button>
+    </div>
+    <video controls playsinline preload="none"></video>
+  </dialog>
+</body>
+</html>
